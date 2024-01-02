@@ -5,7 +5,7 @@ let isAdmin: boolean = false;
 let x: undefined = undefined;
 let y: null = null;
 
-// any type
+// any type => not recomended to use any type
 let d: number;
 d = 12;
 // d = "rokib"; not accepted as we told its number type
