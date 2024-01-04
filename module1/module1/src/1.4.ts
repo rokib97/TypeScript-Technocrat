@@ -11,7 +11,7 @@ d = 12;
 // d = "rokib"; not accepted as we told its number type
 
 // array
-let names: string[] = ["akhi", "sarmin", "neela"]; //only string accested
+let names: string[] = ["akhi", "sarmin", "neela"]; //only string accepted
 names.push("rokib"); //accepted
 // names.push(15); //not accepted
 
