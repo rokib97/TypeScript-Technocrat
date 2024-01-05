@@ -7,7 +7,7 @@ function add(num1: number, num2: number): number {
 // add(2, "3"); not possible
 add(3, 4);
 
-// arrow funcrio\
+// arrow funcrion
 
 const addArrow = (num1: number, num2: number = 20): number => num1 + num2;
 addArrow(10, 20);
