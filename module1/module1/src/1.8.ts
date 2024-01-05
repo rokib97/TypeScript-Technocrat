@@ -36,7 +36,6 @@
   console.log(rest); //["john", "ema"]
 
   //   function parameter
-
   function printFirstTwo([first, second]: string[]) {
     console.log(first, second);
   }
