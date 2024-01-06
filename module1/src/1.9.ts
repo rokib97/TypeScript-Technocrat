@@ -16,7 +16,7 @@
     constact: "016666666666",
   };
   const userTwo: Student = {
-    name: "askhi",
+    name: "akhi pakhi",
     age: 22,
     job: "web developer",
     isSingle: false,

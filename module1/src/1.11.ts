@@ -1,12 +1,7 @@
-// ternary | optional chaining | nullish coalesing
-
 {
+  // ternary
   const number: number = 15;
-  // if (number >= 18) {
-  //   console.log("adult");
-  // } else {
-  //   console.log("not adult enough");
-  // }
+
   const isAdult: string = number >= 18 ? "Adult" : "not Adult";
   // console.log({ isAdult });
 
@@ -28,6 +23,7 @@
     };
   };
 
+  // optional chaining
   const user: User = {
     name: "rokib",
     age: 25,
