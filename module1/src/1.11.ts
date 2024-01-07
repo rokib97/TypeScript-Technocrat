@@ -3,7 +3,7 @@
   const number: number = 15;
 
   const isAdult: string = number >= 18 ? "Adult" : "not Adult";
-  // console.log({ isAdult });
+  console.log({ isAdult });
 
   // nullish coalescing operator
   // null | undefined => desicion
