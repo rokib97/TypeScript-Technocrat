@@ -34,4 +34,5 @@
     },
   };
   console.log(user?.address?.permanentAddress ?? "No Permanent Address Found");
+  console.log(user?.address?.permanentAddress || "No Permanent Address Found");
 }
