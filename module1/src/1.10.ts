@@ -7,7 +7,7 @@ type Developer = FrontendDeveloper | FullStackDeveloper;
 const newDeveloper: FrontendDeveloper = "Pro Frontend Developer";
 
 // Type for User
-type BloodGroup = "O+" | "A+" | "AB+" | "B+";
+type BloodGroup = "O+" | "A+" | "AB+" | "B+" | "AB+";
 
 type User = {
   name: string;
