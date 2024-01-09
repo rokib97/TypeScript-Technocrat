@@ -29,6 +29,7 @@
 
   convertSpeedToMeterPerSecond(null);
 
+  //   never type
   const throwError = (msg: string): never => {
     throw new Error(`Error: ${msg}`);
   };
