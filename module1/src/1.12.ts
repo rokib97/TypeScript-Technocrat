@@ -1,34 +1,37 @@
 {
   // nullable type
-  function searchName(value: string | null) {
-    if (value) {
-      console.log("Value Found");
-    } else {
-      console.log("value not found!");
-    }
+  function searchName(name: string | null) {
+    name ? console.log("Value Found") : console.log("Value not found or null!");
   }
   searchName(null);
 
   //   unknown type
-  const getSpeedInMeterPerSecond = (value: unknown) => {
-    if (typeof value === "number") {
-      console.log(`Converted Speed is ${(value * 1000) / 3600} ms^-1`);
-    } else if (typeof value === "string") {
-      console.log(
-        `Converted Speed is ${
-          (parseFloat(value.split(" ")[0]) * 1000) / 3600
-        } ms^-1`
-      );
-    } else {
-      console.log("Wrong Input!");
+  const convertSpeedToMeterPerSecond = (input: unknown) => {
+    try {
+      if (typeof input === "number") {
+        console.log(`Converted Speed is ${(input * 1000) / 3600} ms^-1`);
+      } else if (typeof input === "string") {
+        const numericValue = parseFloat(input.split(" ")[0]);
+        if (!isNaN(numericValue)) {
+          console.log(
+            `Converted Speed is ${(numericValue * 1000) / 3600} ms^-1`
+          );
+        } else {
+          throw new Error("Invalid numeric value in the string");
+        }
+      } else {
+        throw new Error("Unsupported input type!");
+      }
+    } catch (error) {
+      console.log(`Error: ${(error as Error).message}`);
     }
   };
 
-  //   getSpeedInMeterPerSecond("1000 ms^-1");
-  getSpeedInMeterPerSecond(null);
+  convertSpeedToMeterPerSecond(null);
 
   const throwError = (msg: string): never => {
-    throw new Error(msg);
+    throw new Error(`Error: ${msg}`);
   };
-  throwError("muskil se error hogaya....");
+
+  throwError("An error occurred...");
 }
