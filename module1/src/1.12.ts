@@ -4,6 +4,7 @@
     name ? console.log("Value Found") : console.log("Value not found or null!");
   }
   searchName(null);
+  searchName("rokib");
 
   //   unknown type
   const convertSpeedToMeterPerSecond = (input: unknown) => {
@@ -27,12 +28,12 @@
     }
   };
 
-  convertSpeedToMeterPerSecond(null);
+  convertSpeedToMeterPerSecond("1000 ms^-2");
 
   //   never type
-  const throwError = (msg: string): never => {
-    throw new Error(`Error: ${msg}`);
-  };
+  //   const throwError = (msg: string): never => {
+  //     throw new Error(`Error: ${msg}`);
+  //   };
 
-  throwError("An error occurred...");
+  //   throwError("An error occurred...");
 }
