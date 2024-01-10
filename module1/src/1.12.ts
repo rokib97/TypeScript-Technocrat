@@ -3,8 +3,8 @@
   function searchName(name: string | null) {
     name ? console.log("Value Found") : console.log("Value not found or null!");
   }
-  searchName(null);
-  searchName("rokib");
+  //   searchName(null);
+  //   searchName("rokib");
 
   //   unknown type
   const convertSpeedToMeterPerSecond = (input: unknown) => {
@@ -29,6 +29,8 @@
   };
 
   convertSpeedToMeterPerSecond("1000 ms^-2");
+  convertSpeedToMeterPerSecond(1000);
+  convertSpeedToMeterPerSecond(true);
 
   //   never type
   //   const throwError = (msg: string): never => {
